@@ -604,6 +604,12 @@ class DB_Command extends WP_CLI_Command {
 	 * [--all-tables]
 	 * : List all tables in the database, regardless of the prefix, and even if not registered on $wpdb. Overrides --all-tables-with-prefix.
 	 *
+	 * [--base-tables-only]
+	 * : Restrict returned tables to those that are not views.
+	 *
+	 * [--views-only]
+	 * : Restrict returned tables to those that are views.
+	 *
 	 * [--format=<format>]
 	 * : Render output in a particular format.
 	 * ---
